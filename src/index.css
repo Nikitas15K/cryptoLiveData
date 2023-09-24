@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  height: 10vh;
+  min-height: 60px;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 1vh 10% 1vh 10px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: grey;
+  font-size: 1.5rem;
+}
+
+header p {
+  flex: 1;
+  text-align: left;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5vh;
+}
+
+.sidebar {
+  width: 20vw;
+  max-width: 200px;
+  height: 100vh;
+  position: fixed;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0.5vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebarButtonArea {
+  min-height: 50%;
+  width: 80%;
+}
+
+.sidebarButtonArea button {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 10px;
+  word-wrap: break-word;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.sidebarButtonArea button span {
+  border: 2px solid gray;
+  font-size: 10px;
+  padding: 0px 2px;
+  border-radius: 50%;
+}
+
+.crypto {
+  width: 15vw;
+  max-width: 150px;
+  margin-left: 0;
+  margin-top: 5vh;
+}
+
+.dataArea {
+  margin-left: 21vw;
+  padding-top: 10vh;
+}
+
+.chartsWrapper {
+  width: 73vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chartContainer {
+  flex: 0 0 40%;
+}
+
+.chart {
+  width: 36vw;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 73vw;
+  font-size: 1em;
+  margin-top: 5%;
+  margin-bottom: 1rem;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+td {
+  width: 33%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+tr td:first-child {
+  font-weight: bold;
+}
+
+tr td:not(:first-child) {
+  text-align: end;
+}
+
+button {
+  padding: 7px 5px;
+  border-radius: 50%;
+  border: solid 1px gold;
+  color: grey;
+  background-color: gold;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: grey;
+  color: gold;
+}
+
+span {
+  padding: 0.5em;
+  font-size: 20px;
+}
+
+select {
+  padding: 4px 0.5rem 4px 0.3rem;
+  width: 160px;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .chartContainer {
+    flex: 0 0 100%;
+    width: 100%;
+    padding-right: 3%;
+  }
+  .chart {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.8;
+  }
+}
