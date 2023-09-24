@@ -1,3 +1,7 @@
+##Before start 
+
+Get an CRYPTO_API_KEY from cryptocompare. Create an .env file and add it like : VITE_APP_CRYPTO_API_KEY = <your crypto key>
+
 ## Usage
 
 Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
